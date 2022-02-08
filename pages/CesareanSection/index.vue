@@ -1,11 +1,11 @@
 <template>
 	<view class="content col-wrapper">
 		<form class="form">
-			<view class="uni-forms-item form-item row-wrapper">
+			<view class="uni-forms-item form-item ">
 				<view class="title form-title" style="margin-right: 10px;">孕妇本人生日</view>
 				<uni-datetime-picker class="form-value" type="datetime" v-model="form.birthDay" />
 			</view>
-			<view class="uni-forms-item form-item row-wrapper">
+			<view class="uni-forms-item form-item ">
 				<view class="title">姓名</view>
 				<input v-model="form.name" class="input form-value" placeholder="请输入姓名" />
 			</view>
@@ -95,8 +95,6 @@
 			}
 		}
 	}
-
-
 	.label {
 		margin-right: 10px;
 	}
