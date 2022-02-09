@@ -15,7 +15,13 @@
 		{
 			"path": "pages/test/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "手机号码测吉凶"
+			}
+		},
+		{
+			"path": "pages/test/result",
+			"style": {
+				"navigationBarTitleText": "手机号码测吉凶结果"
 			}
 		},
 		{
@@ -70,5 +76,15 @@
 			"pagePath": "pages/ziwei/index",
 			"text": "紫薇斗数"
 		}]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
 	}
 }

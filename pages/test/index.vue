@@ -1,9 +1,12 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view class="content col-wrapper">
+		<form class="form">
+			<view class="uni-forms-item form-item">
+				<view class="title form-title">手机号码</view>
+				<input v-model="form.mobile" class="input form-value" placeholder="请输入手机号码" />
+			</view>
+		</form>
+		<button @click="testName()" class="submit" type="primary">开始鉴定</button>
 	</view>
 </template>
 
@@ -11,39 +14,56 @@
 	export default {
 		data() {
 			return {
-				title: '取名字/测名字'
+				title: '取名字/测名字',
+				form: {
+					mobile: undefined
+				}
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			testName() {
+				uni.navigateTo({
+					url: '/pages/test/result?mobile=' + this.form.mobile
+				})
+			}
 		}
 	}
 </script>
 
-<style>
+<style scoped lang="less">
 	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		padding: 10px;
+		align-items: stretch;
+
+		.submit {
+			align-self: stretch;
+			margin: 0;
+		}
+
+		.form {
+			align-self: stretch;
+			margin: 10px 0;
+
+			.form-item {
+				margin-top: 5px;
+
+				.input {
+					border: 1px solid #dcdfe6;
+					height: 40px;
+					border-radius: 4px;
+					padding: 0 9px;
+				}
+
+				.form-value {
+					margin-top: 5px;
+				}
+			}
+		}
 	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
 
 	.title {
 		font-size: 36rpx;
