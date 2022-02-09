@@ -7,6 +7,12 @@
 			}
 		},
 		{
+			"path": "pages/index/result",
+			"style": {
+				"navigationBarTitleText": "名字测试结果"
+			}
+		},
+		{
 			"path": "pages/test/index",
 			"style": {
 				"navigationBarTitleText": "uni-app"
@@ -27,7 +33,7 @@
 		{
 			"path": "pages/eightCharacters/result",
 			"style": {
-				"navigationBarTitleText": "结果"
+				"navigationBarTitleText": "八字结果"
 			}
 		},
 		{

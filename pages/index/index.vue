@@ -73,7 +73,7 @@
 					</radio-group>
 				</view>
 			</form>
-			<button @click="testName" class="submit" type="primary">开始鉴定</button>
+			<button @click="testName()" class="submit" type="primary">开始鉴定</button>
 		</view>
 	</view>
 </template>
@@ -109,7 +109,9 @@
 			 * 提交
 			 */
 			testName() {
-				console.log(this.form)
+				uni.navigateTo({
+					url:'/pages/index/result'
+				})
 			}
 		}
 	}
