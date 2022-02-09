@@ -5,6 +5,31 @@
 		</uni-segmented-control>
 		<!-- 测名字 -->
 		<view v-show="current ===0" class="testName col-wrapper">
+			<uni-card title="系统说明">
+				親手替自己的孩子取名，意義非凡。【劍靈姓名學命名系統】融合古典命理與現代觀念，提供六種專業的取名方法，幫你輕鬆取好名，相信一個好名字是送給寶寶最棒的生日禮物。
+			</uni-card>
+			<uni-card title="系统核心">
+				<view class="row-wrapper">
+					<image src="../../static/index/a.gif" class="image"></image>
+					<view class="row-wrapper">
+						<view class="col-wrapper item">
+							<image class="image-title" src="../../static/index/title01.gif"/>
+							<view>配合八字命格，補偏救弊</view>
+						</view>
+						<view class="col-wrapper item">
+							<image class="image-title" src="../../static/index/title01.gif"/>
+							<view>配合八字命格，補偏救弊</view>
+						</view>
+						<view class="col-wrapper item">
+							<image class="image-title" src="../../static/index/title01.gif"/>
+							<view>配合八字命格，補偏救弊</view>
+						</view>
+					</view>
+				</view>
+			</uni-card>
+			<uni-card title="系统流程">
+				<image src="../../static/index/liucheng.png"></image>
+			</uni-card>
 		</view>
 		<!-- 起名字 -->
 		<view v-show="current === 1" class="testName col-wrapper">
@@ -146,5 +171,17 @@
 
 	.submit {
 		margin: 0;
+	}
+	.image{
+		width: 80px;
+		height: 80px;
+	}
+	.item{
+		width: 70px;
+		margin: 5px;
+		.image-title{
+			width: 100%;
+			height: 20px;
+		}
 	}
 </style>
