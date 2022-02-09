@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.25.0"
+  },
   "devDependencies": {
     "@dcloudio/uni-ui": "^1.4.11"
   },

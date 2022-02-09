@@ -6,8 +6,8 @@
 				<uni-datetime-picker class="form-value" type="datetime" v-model="form.birthDay" />
 			</view>
 			<view class="uni-forms-item form-item ">
-				<view class="title">姓名</view>
-				<input v-model="form.name" class="input form-value" placeholder="请输入姓名" />
+				<view class="title">择日期间</view>
+				<uni-datetime-picker type="daterange" v-model="form.birthDayRange" />
 			</view>
 			<view class="uni-forms-item form-item">
 				<view class="title">性别</view>
@@ -52,6 +52,7 @@
 					gender: 1, // 1- 男 2- 女
 					birthDay: '',
 					birthPlace: 1, // 1-南半球 2-北半球
+					birthDayRange:[],
 					name: ''
 				}
 			}

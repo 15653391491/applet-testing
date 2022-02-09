@@ -1,9 +1,8 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
+		<!-- <image class="logo" src="/static/logo.png"></image> -->
 			<text class="title">{{title}}</text>
-		</view>
+			<button @click="checkResult()">查看结果</button>
 	</view>
 </template>
 
@@ -11,19 +10,22 @@
 	export default {
 		data() {
 			return {
-				title: '剖腹产择日'
+				title: '八字'
 			}
 		},
 		onLoad() {
-
 		},
 		methods: {
-
+			checkResult(){
+				uni.navigateTo({
+					url:'/pages/eightCharacters/result'
+				})
+			}
 		}
 	}
 </script>
 
-<style>
+<style scoped lang="less">
 	.content {
 		display: flex;
 		flex-direction: column;

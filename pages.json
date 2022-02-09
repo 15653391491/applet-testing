@@ -21,7 +21,13 @@
 		{
 			"path": "pages/eightCharacters/index",
 			"style": {
-				"navigationBarTitleText": "剖腹产择日"
+				"navigationBarTitleText": "八字"
+			}
+		},
+		{
+			"path": "pages/eightCharacters/result",
+			"style": {
+				"navigationBarTitleText": "结果"
 			}
 		},
 		{

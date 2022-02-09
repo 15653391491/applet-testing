@@ -3,10 +3,13 @@
 		<!-- tab -->
 		<uni-segmented-control :current="current" styleType='text' :values="items" @clickItem="e=>onClickItem(e)">
 		</uni-segmented-control>
-		<!-- 测名字 -->
-		<view v-show="current ===0" class="testName col-wrapper">
-		</view>
 		<!-- 起名字 -->
+		<view v-show="current ===0" class="testName col-wrapper">
+			<uni-card title="系统说明">
+				親手替自己的孩子取名，意義非凡。【劍靈姓名學命名系統】融合古典命理與現代觀念，提供六種專業的取名方法，幫你輕鬆取好名，相信一個好名字是送給寶寶最棒的生日禮物。
+			</uni-card>
+		</view>
+		<!-- 测名字 -->
 		<view v-show="current === 1" class="testName col-wrapper">
 			<form class="form">
 				<view class="uni-forms-item form-item">
